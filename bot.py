@@ -42,11 +42,7 @@ def convert_image(update,context):
         newFile=context.bot.get_file(file_id)
         file= newFile.file_path
         context.user_data['filepath']=file
-        keyboard = [[InlineKeyboardButton("English ", callback_data='eng'), InlineKeyboardButton("Russian", callback_data='rus'),InlineKeyboardButton("Czech", callback_data='cze')],
-                    [InlineKeyboardButton("Chinese simplified", callback_data='chs'), InlineKeyboardButton("Chinese Traditional", callback_data='cht')],[InlineKeyboardButton("Japanese", callback_data='jpn')] ,
-                    [InlineKeyboardButton("Arabic", callback_data='ara'),InlineKeyboardButton("Afrikans", callback_data='AFR'), InlineKeyboardButton("German", callback_data='gre')],
-                    [InlineKeyboardButton("Italian", callback_data='ita'),InlineKeyboardButton("Indonesian", callback_data='eng'),InlineKeyboardButton("French", callback_data='fre')],
-                    [InlineKeyboardButton ("Spanish", callback_data='spa'),InlineKeyboardButton("Portuguese", callback_data='por'),InlineKeyboardButton("Korean", callback_data='kor')]]
+        keyboard = [[InlineKeyboardButton("English ", callback_data='eng'), InlineKeyboardButton("Hindi", callback_data='hin')]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         update.message.reply_text('Select Language : ', reply_markup=reply_markup)
 
