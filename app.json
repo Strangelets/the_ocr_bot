@@ -8,7 +8,7 @@
         "image to text",
         "Optical Character Recognition"
     ],
-    "repository": "https://github.com/amit-y11/the_ocr_bot",
+    "repository": "https://github.com/Strangelets/the_ocr_bot",
     "env":{
         "bot_token":{
             "description":"Telegram bot token",
